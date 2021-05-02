@@ -37,7 +37,7 @@
         </form>
 
         <ul class="navbar-nav navbar-right">
-          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg beep"><i class="far fa-bell"></i></a>
+          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg"><i class="far fa-bell"></i></a>
             <div class="dropdown-menu dropdown-list dropdown-menu-right">
               <div class="dropdown-header">Notifications
                 <div class="float-right">
@@ -79,7 +79,12 @@
             <img alt="image" src="{{ asset('vendor/stisla') }}/assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
             <div class="d-sm-none d-lg-inline-block">Hi, {{ $users->detail->detail_nama }}</div></a>
             <div class="dropdown-menu dropdown-menu-right">
-              <div class="dropdown-title">Logged in 5 min ago</div>
+              {{-- <div class="dropdown-title">Logged in 5 min ago</div> --}}
+              <div class="dropdown-title">
+                  <b>
+                      <span class="text-center">Menu</span>
+                  </b>
+              </div>
               <a href="{{ route('users-profile', $users->id) }}" class="dropdown-item has-icon">
                 <i class="far fa-user"></i> Profile
               </a>
