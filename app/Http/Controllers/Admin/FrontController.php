@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cookie;
+use App\Models\Login;
+use App\Models\Detail;
 
 class FrontController extends Controller
 {
@@ -12,6 +14,14 @@ class FrontController extends Controller
     {
         $users = session('data_login');
         return view('admin.index', [
+            'users' => $users
+        ]);
+    }
+
+    public function getUserProfile(Login $id)
+    {
+        $users = session('data_login');
+        return view('admin.users.profile', [
             'users' => $users
         ]);
     }
