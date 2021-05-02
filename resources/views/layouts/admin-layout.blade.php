@@ -140,7 +140,16 @@
           <div class="section-body">
             <div class="container">
                 <div class="row">
-                    @yield('main-content')
+                    <div class="col-xl-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="card">
+                            <div class="card-header">
+                                @yield('main-header')
+                            </div>
+                            <div class="card-body">
+                                @yield('main-content')
+                            </div> 
+                        </div>
+                    </div>
                 </div>
             </div>
           </div>
