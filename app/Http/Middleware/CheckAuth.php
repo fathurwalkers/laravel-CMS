@@ -12,7 +12,6 @@ class CheckAuth
     {
         $cek_users = session('data_login');
         $cookie = Cookie::get('remember_me');
-
         if ($cek_users) {
             return $next($request);
         } elseif (!$cookie == null) {
@@ -21,13 +20,5 @@ class CheckAuth
         } else {
             return redirect()->route('login-page')->with('auth_fail', 'Silahkan melakukan login terlebih dahulu.');
         }
-
-        // if (!$cookie == null) {
-        //     session(['data_login' => $cookie]);
-        //     return $next($request);
-        // } else {
-        //     return $next($request);
-        // }
-        // return redirect()->route('login-page')->with('auth_fail', 'Silahkan melakukan login terlebih dahulu.');
     }
 }
