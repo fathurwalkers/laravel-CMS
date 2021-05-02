@@ -72,7 +72,7 @@
               <div class="dropdown-footer text-center">
                 <a href="#">View All <i class="fas fa-chevron-right"></i></a>
               </div>
-              
+
             </div>
           </li>
           <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
@@ -90,13 +90,19 @@
                 <i class="fas fa-cog"></i> Settings
               </a>
               <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item has-icon text-danger">
-                <i class="fas fa-sign-out-alt"></i> Logout
-              </a>
+
+              <form action="{{ route('logout') }}" method="POST">
+                @csrf
+                <button class="dropdown-item has-icon text-danger">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </button>
+              </form>
+
             </div>
           </li>
         </ul>
       </nav>
+
       <div class="main-sidebar">
         <aside id="sidebar-wrapper">
           <div class="sidebar-brand">

@@ -11,12 +11,12 @@ use App\Http\Controllers\Admin\BackController;
 // });
 
 // ADMINISTRATOR Routing
-Route::group(['prefix' => '/dashboard'], function () {
+Route::group(['prefix' => '/dashboard', 'middleware' => 'checkauth'], function () {
     Route::get('/', [AdminFront::class, 'index'])->name('admin-index');
 });
 
 // HOME Routing
-Route::group(['prefix' => '/home', 'middleware' => 'checkauth'], function () {
+Route::group(['prefix' => '/home'], function () {
     Route::get('/', [HomeFront::class, 'index'])->name('home-index');
 });
 
@@ -24,7 +24,7 @@ Route::get('/login', [AdminFront::class, 'login'])->name('login-page');
 Route::post('/login', [BackController::class, 'postLogin'])->name('post-login');
 Route::get('/register', [AdminFront::class, 'register'])->name('register-page');
 Route::post('/register', [BackController::class, 'postRegister'])->name('post-register');
-Route::get('/logout', [BackController::class, 'logout'])->name('logout');
+Route::post('/logout', [BackController::class, 'logout'])->name('logout');
 
 
 // AUTO GENERATE USER DATA
