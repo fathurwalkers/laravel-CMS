@@ -134,11 +134,15 @@
       <!-- Main Content -->
       <div class="main-content">
         <section class="section">
-          <div class="section-header">
+          {{-- <div class="section-header">
             <h1>Blank Page</h1>
-          </div>
-
+          </div> --}}
           <div class="section-body">
+            <div class="container">
+                <div class="row">
+                    @yield('main-content')
+                </div>
+            </div>
           </div>
         </section>
       </div>
@@ -166,7 +170,7 @@
   <!-- Template JS File -->
   <script src="{{ asset('vendor/stisla') }}/assets/js/scripts.js"></script>
   <script src="{{ asset('vendor/stisla') }}/assets/js/custom.js"></script>
-
+  @stack('after-script')
   <!-- Page Specific JS File -->
 </body>
 </html>
