@@ -14,7 +14,7 @@
   <!-- Template CSS -->
   <link rel="stylesheet" href="{{ asset('vendor/stisla') }}/assets/css/style.css">
   <link rel="stylesheet" href="{{ asset('vendor/stisla') }}/assets/css/components.css">
-  @stack('after-style')
+  @yield('after-style')
 </head>
 
 <body>
@@ -88,10 +88,10 @@
               <a href="{{ route('users-profile', $users->id) }}" class="dropdown-item has-icon">
                 <i class="far fa-user"></i> Profile
               </a>
-              <a href="features-activities.html" class="dropdown-item has-icon">
+              <a href="#" class="dropdown-item has-icon">
                 <i class="fas fa-bolt"></i> Activities
               </a>
-              <a href="features-settings.html" class="dropdown-item has-icon">
+              <a href="{{ route('users-settings', $users->id) }}" class="dropdown-item has-icon">
                 <i class="fas fa-cog"></i> Settings
               </a>
               <div class="dropdown-divider"></div>
@@ -184,7 +184,7 @@
   <!-- Template JS File -->
   <script src="{{ asset('vendor/stisla') }}/assets/js/scripts.js"></script>
   <script src="{{ asset('vendor/stisla') }}/assets/js/custom.js"></script>
-  @stack('after-script')
+  @yield('after-script')
   <!-- Page Specific JS File -->
 </body>
 </html>

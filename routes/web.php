@@ -13,7 +13,10 @@ use App\Http\Controllers\Admin\BackController;
 // ADMINISTRATOR Routing
 Route::group(['prefix' => '/dashboard', 'middleware' => 'checkauth'], function () {
     Route::get('/', [AdminFront::class, 'index'])->name('admin-index');
-    Route::get('/users/{id}/profile', [AdminFront::class, 'getUserProfile'])->name('users-profile');
+    Route::group(['prefix' => '/users'], function () {
+        Route::get('/{id}/profile', [AdminFront::class, 'getUserProfile'])->name('users-profile');
+        Route::get('/{id}/settings', [AdminFront::class, 'getUserSettings'])->name('users-settings');
+    });
 });
 
 // HOME Routing
