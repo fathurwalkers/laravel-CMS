@@ -15,7 +15,7 @@
  
     <div class="modal-content">
       <div class="modal-header">
-        <h5>Modal large (lg)</h5>
+        <h5>Modal large lg</h5>
       </div>
       <div class="modal-body">
         Contoh modal berukuran sedang.
@@ -26,9 +26,3 @@
 </div>
 
 @endsection
-
-{{-- @section('after-script')
-<script>
-    
-  </script>
-@endsection --}}
