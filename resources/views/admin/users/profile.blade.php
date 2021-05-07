@@ -148,8 +148,8 @@ h6 {
 
 
 <div class="page-content page-container" id="page-content">
-    <div class="padding">
-        <div class="row container d-flex justify-content-center">
+    {{-- <div class="padding"> --}}
+        <div class="row container d-flex justify-content-center p-1 mt-0">
             <div class="col-xl-12 col-md-12">
                 <div class="card user-card-full">
                     <div class="row m-l-0 m-r-0">
@@ -158,6 +158,12 @@ h6 {
                                 <div class="m-b-25"> <img src="https://img.icons8.com/bubbles/100/000000/user.png" class="img-radius" alt="User-Profile-Image"> </div>
                                 <h6 class="f-w-600">Hembo Tingor</h6>
                                 <p>Web Designer</p> <i class=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i>
+                                <div class="row">
+                                    <div class="col-12">
+                                        {{-- <button class="justify-content-center btn btn-info ml-1 mr-1 pl-2 pr-2 pt-1 pb-1 shadow-dark">Settings</button> --}}
+                                        <button class="justify-content-center btn btn-success ml-1 mr-1 pl-2 pr-2 pt-1 pb-1 shadow-dark">Chage Password</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-sm-8">
@@ -195,7 +201,7 @@ h6 {
                 </div>
             </div>
         </div>
-    </div>
+    {{-- </div> --}}
 </div>
 
 
