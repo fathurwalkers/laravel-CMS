@@ -156,12 +156,12 @@ h6 {
                         <div class="col-sm-4 bg-c-lite-green user-profile">
                             <div class="card-block text-center text-white">
                                 <div class="m-b-25"> <img src="https://img.icons8.com/bubbles/100/000000/user.png" class="img-radius" alt="User-Profile-Image"> </div>
-                                <h6 class="f-w-600">Hembo Tingor</h6>
-                                <p>Web Designer</p> <i class=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i>
+                                <h6 class="f-w-600">John Doe</h6>
+                                <p>Professional Hacker</p> <i class=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i>
                                 <div class="row">
                                     <div class="col-12">
                                         {{-- <button class="justify-content-center btn btn-info ml-1 mr-1 pl-2 pr-2 pt-1 pb-1 shadow-dark">Settings</button> --}}
-                                        <button class="justify-content-center btn btn-success ml-1 mr-1 pl-2 pr-2 pt-1 pb-1 shadow-dark">Chage Password</button>
+                                        <button class="justify-content-center btn btn-success ml-1 mr-1 pl-2 pr-2 pt-1 pb-1 shadow-dark">Settings</button>
                                     </div>
                                 </div>
                             </div>
