@@ -118,10 +118,10 @@
       <div class="main-sidebar">
         <aside id="sidebar-wrapper">
           <div class="sidebar-brand">
-            <a href="index.html">Stisla</a>
+            <a href="index.html">Techno Buton Raya</a>
           </div>
           <div class="sidebar-brand sidebar-brand-sm">
-            <a href="index.html">St</a>
+            <a href="index.html">TBR</a>
           </div>
           <ul class="sidebar-menu">
               <li class="menu-header">Dashboard</li>
@@ -129,8 +129,8 @@
               <li class="nav-item dropdown">
                 <a href="#" class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Dashboard</span></a>
                 <ul class="dropdown-menu">
-                  <li><a class="nav-link" href="index-0.html">General Dashboard</a></li>
-                  <li><a class="nav-link" href="index.html">Ecommerce Dashboard</a></li>
+                  <li><a class="nav-link" href="index-0.html">Stats</a></li>
+                  <li><a class="nav-link" href="index.html">Earnings</a></li>
                 </ul>
               </li>
               
@@ -178,14 +178,14 @@
           </div>
         </section>
       </div>
-      <footer class="main-footer">
+      {{-- <footer class="main-footer">
         <div class="footer-left">
           Copyright &copy; 2018 <div class="bullet"></div> Design By <a href="https://nauval.in/">Muhamad Nauval Azhar</a>
         </div>
         <div class="footer-right">
           2.3.0
         </div>
-      </footer>
+      </footer> --}}
     </div>
   </div>
 
