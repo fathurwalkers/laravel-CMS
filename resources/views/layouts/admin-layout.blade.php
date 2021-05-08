@@ -140,14 +140,15 @@
                   <li><a class="nav-link" href="index-0.html">Posts</a></li>
                   <li><a class="nav-link" href="index.html">Category</a></li>
                   <li><a class="nav-link" href="index.html">Pages</a></li>
+                  <li><a class="nav-link" href="index.html">User Activity</a></li>
                 </ul>
               </li>
-              <li class="active"><a class="nav-link" href="blank.html"><i class="far fa-square"></i> <span>Blank Page</span></a></li>
+              <li class="active"><a class="nav-link" href="blank.html"><i class="far fa-square"></i> <span>Settings</span></a></li>
             </ul>
 
             <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
               <a href="https://getstisla.com/docs" class="btn btn-primary btn-lg btn-block btn-icon-split">
-                <i class="fas fa-rocket"></i> Documentation
+                <i class="fas fa-rocket"></i> Homepage
               </a>
             </div>
         </aside>
