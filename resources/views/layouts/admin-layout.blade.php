@@ -96,12 +96,19 @@
               </a>
               <div class="dropdown-divider"></div>
 
-              <form action="{{ route('logout') }}" method="POST">
-                @csrf
-                <button class="btn btn-danger text-white justify-content-center align-content-center mx-auto">
-                    <i class="fas fa-sign-out-alt"></i> Logout
-                </button>
-              </form>
+              <div class="row justify-content-center">
+                <div class="col-12">
+                  <div class="d-flex justify-content-center">
+                    <form action="{{ route('logout') }}" method="POST">
+                      @csrf
+                      <button class="btn btn-danger text-white mx-auto px-5">
+                          <i class="fas fa-sign-out-alt"></i>
+                          Logout
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
 
             </div>
           </li>

@@ -161,7 +161,7 @@ h6 {
                                 <div class="row">
                                     <div class="col-12">
                                         {{-- <button class="justify-content-center btn btn-info ml-1 mr-1 pl-2 pr-2 pt-1 pb-1 shadow-dark">Settings</button> --}}
-                                        <button class="justify-content-center btn btn-success ml-1 mr-1 pl-2 pr-2 pt-1 pb-1 shadow-dark">Settings</button>
+                                        <button onclick="window.location.href='{{ route('users-settings', $users->id) }}'" class="justify-content-center btn btn-success ml-1 mr-1 pl-2 pr-2 pt-1 pb-1 shadow-dark">Settings</button>
                                     </div>
                                 </div>
                             </div>
