@@ -15,4 +15,9 @@ class Activity extends Model
     protected $primaryKey = "id";
 
     protected $guarded = [];
+
+    public function login()
+    {
+        return $this->belongsTo(Login::class);
+    }
 }
