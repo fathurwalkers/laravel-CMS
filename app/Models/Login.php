@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 use App\Models\Detail;
 use App\Models\Article;
 use App\Models\Activity;
+use App\Models\Galery;
 
 class Login extends Model
 {
@@ -29,5 +30,10 @@ class Login extends Model
     public function activity()
     {
         return $this->hasMany(Activity::class);
+    }
+
+    public function galery()
+    {
+        return $this->hasOne(Galery::class);
     }
 }

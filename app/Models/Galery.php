@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Login;
 
 class Galery extends Model
 {
@@ -14,4 +15,9 @@ class Galery extends Model
     protected $primaryKey = 'id';
     
     protected $guarded = [];
+
+    public function login()
+    {
+        return $this->belongsTo(Login::class);
+    }
 }
