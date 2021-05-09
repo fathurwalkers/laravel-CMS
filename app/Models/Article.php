@@ -4,6 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Login;
+use App\Models\Category;
 
 class Article extends Model
 {
@@ -14,4 +16,14 @@ class Article extends Model
     protected $primaryKey = 'id';
 
     protected $guarded = [];
+
+    public function login()
+    {
+        return $this->belongsTo(Login::class);
+    }
+
+    public function categories()
+    {
+        return $this->belongsTo(Category::class);
+    }
 }
