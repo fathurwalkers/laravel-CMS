@@ -34,7 +34,6 @@ class BackController extends Controller
                     return redirect()->route('admin-index')->with('login_success', 'Anda telah Login!');
                 }
             } else {
-                echo "cek password false";
                 return redirect()->route('login-page')->with('fail_password', 'Password is incorect!');
             }
         }
