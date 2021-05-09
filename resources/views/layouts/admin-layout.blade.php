@@ -143,7 +143,8 @@
                   <li><a class="nav-link" href="index.html">User Activity</a></li>
                 </ul>
               </li>
-              <li class="active"><a class="nav-link" href="blank.html"><i class="far fa-square"></i> <span>Settings</span></a></li>
+              <li class=""><a class="nav-link" href="blank.html"><i class="far fa-square"></i> <span>Settings</span></a></li>
+              <li class=""><a class="nav-link" href="blank.html"><i class="far fa-square"></i> <span>Galery</span></a></li>
             </ul>
 
             <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
