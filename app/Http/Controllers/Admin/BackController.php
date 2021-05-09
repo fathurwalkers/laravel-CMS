@@ -16,11 +16,6 @@ use Illuminate\Support\Facades\Cookie;
 
 class BackController extends Controller
 {
-    public function index()
-    {
-        return "Index Page";
-    }
-
     public function postLogin(Request $request)
     {
         $data_login = Login::where('login_username', $request->login_username)->first();
